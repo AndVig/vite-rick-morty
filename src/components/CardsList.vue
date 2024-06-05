@@ -1,11 +1,23 @@
 <script>
+import { store } from '../store';
 export default {
-    name: "CardsList"
+    name: "CardsList",
+    data(){
+        return {
+            store
+        }
+    },
 }
+
+
 </script>
 
 <template>
     <div>
-        Lista Risultati trovati
+        <ul>
+            <li class="personaggi" v-for="character in store.results">
+                {{ character.name }}
+            </li>
+        </ul>
     </div>
 </template>
