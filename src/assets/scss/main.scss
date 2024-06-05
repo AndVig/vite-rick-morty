@@ -4,3 +4,7 @@
 @use './partials/tipography' as *;
 @use './partials/common' as *;
 @use './partials/utils' as *;
+
+main{
+    background-color: $body-bg-color;
+}
